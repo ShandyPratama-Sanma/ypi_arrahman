@@ -1,0 +1,429 @@
+:root{
+    --hijau-utama: #1f904b;
+    --hijau-tua: #16752b;
+    --hijau-gelap: #17723c;
+    --hijau-muda: #7cd03c;
+    --kuning-utama: #ffe600;
+    --abu-abu: #f5f5f5;
+    --hitam-utama: #031207;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5; /*untuk ngatur jarak antar baris*/
+}
+.container-white{
+    width: 100%;
+    background-color: white;
+}
+.container-green{
+    background: linear-gradient(200deg, var(--hijau-gelap), var(--hijau-tua));
+    color: white;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.judul{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 1rem;
+}
+.button1{
+    display: inline-block;
+    margin: 10px 20px 20px;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background-color: var(--hijau-tua);
+    color: white;
+    transition: .3s;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border: none;
+}
+.button1:hover{
+    background: var(--hijau-muda);
+    color: #222;
+    text-decoration: none;
+}
+
+/* NAVBAR **************************************************************************************/
+.navbar{
+    position: sticky; /* ini masih belum jalan */
+    top: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 8px 0;
+    z-index: 10;
+    background: linear-gradient(135deg, var(--hijau-muda), #1f904b);
+}
+.navbar-brand{
+    display: flex;
+
+    align-items: center; /*agar logo dan teksnya sejajar*/
+    gap: 8px; /*ini jarak antara logo dan teksnya*/
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+.navbar-nav>li>a{
+    color: white !important;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s;
+}
+.navbar-nav>li>a:hover{
+    color: var(--kuning-utama) !important;
+    background-color: transparent !important; /*supaya gk ada hover background putih dari bootstrap*/
+    font-size: 1.25rem;
+}
+.navbar-nav>li>a:focus{ /* saat menerima input */
+    background-color: transparent !important;
+    font-size: 1.25rem;
+}
+.navbar-toggle{
+    border: 1px solid var(--kuning-utama) !important;
+}
+.navbar-toggle .icon-bar{
+    background-color: var(--kuning-utama) !important;
+}
+.dropdown-menu{
+    position: absolute;
+    z-index: 2;
+    border: none;
+    border-radius: 6px !important;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    overflow: hidden;
+    background: linear-gradient(200deg, var(--hijau-utama), var(--hijau-muda));
+}
+.dropdown-menu li a:hover{
+    font-size: 1rem;
+    color: var(--kuning-utama) !important;
+    background: transparent !important;
+}
+.dropdown-menu li a{
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white !important;
+    transition: .3s;
+}
+
+/* kontak *******************************************************************************************************/
+.kontak-section{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    background-color: #ffffff;
+    margin: 24px 12px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.kontak-section h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+}
+.pesan-kesan-section{
+    padding: 36px;
+}
+.pesan-kesan form{
+    margin-top: 24px;
+    padding: 12px;
+    margin-top: 6px;
+}
+.pesan-kesan, .informasi{
+    padding: 12px 24px 24px;
+}
+.pesan-kesan-section h2{
+    color: var(--hijau-utama);
+    border-bottom: 6px solid var(--hijau-utama);
+    border-bottom-style: double;
+}
+.pesan-kesan input, .pesan-kesan textarea{
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.pesan-kesan-section textarea{
+    width: 100%;
+    height: 150px;
+}
+
+.informasi-section h2{
+    color: #ffffff;
+    border-bottom: 6px solid #ffffff;
+    border-bottom-style: double;
+}
+.informasi-section{
+    background: linear-gradient(
+        135deg,
+        var(--hijau-utama),
+        var(--hijau-tua)
+    );
+    color: white;
+    margin: 0;
+    margin-right: -32px;
+    padding: 36px;
+}
+.informasi-card{
+    border-bottom: 1px solid #ffffffcd;
+}
+.informasi-card h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.informasi-card p{
+    font-size: 1rem;
+    padding-left: 16px;
+    color: #ffffff;
+}
+.informasi-card:last-child{
+    border-bottom: none;
+}
+.pesan-kesan .form-control{
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: .25s;
+}
+.pesan-kesan input{
+    height: 48px;
+    background-color: #f5f5f5;
+}
+.pesan-kesan textarea{
+    min-height: 170px;
+    resize: none;
+    background-color: #f5f5f5;
+}
+.pesan-kesan .form-control:focus{
+    border-color: var(--hijau-utama);
+    box-shadow: 0 0 10px rgba(31,144,75,.15);
+    transform: translateY(-2px);
+}
+.button-pesan-kesan{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+.button-pesan-kesan button{
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .25s;
+}
+.button-pesan-kesan .reset-button{
+    background: #ececec;
+    color: #444;
+}
+.button-pesan-kesan .reset-button:hover{
+    background: #d8d8d8;
+}
+.button-pesan-kesan .submit-button{
+    background: var(--hijau-utama);
+    color: white;
+}
+.button-pesan-kesan button:hover{
+    transform: translateY(-2px);
+}
+.button-pesan-kesan .submit-button:hover{
+    background: var(--hijau-gelap);
+}
+
+.map{
+    padding: 0 12px 2rem;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    border: 3px solid var(--hijau-tua);
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+/* footer **********************************************************************************************/
+.footer-content{
+    padding: 24px 32px;
+}
+.footer-brand{
+    display: flex;
+    align-items: center; /*agar logo dan teksnya sejajar*/
+    gap: 8px; /*ini jarak antara logo dan teksnya*/
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.footer-brand img{
+    width: 50px;
+    height: 50px;
+}
+.footer-text{
+    text-align: justify;
+    padding: 12px 0;
+}
+.icon-sosmed{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 12px;
+    transition: .3s;
+}
+.sosmed .list-inline{
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+}
+.icon-sosmed a{
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.icon-sosmed:hover{
+    background-color: white;
+}
+.icon-sosmed:hover a{
+    color: var(--hijau-utama);
+}
+.footer-content h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-menu{
+    list-style: none;
+    padding: 0;
+}
+.footer-menu li{
+    margin-bottom: 10px;
+}
+.footer-menu a{
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+}
+.footer-menu a:hover{
+    color: var(--kuning-utama);
+    padding-left: 5px;
+}
+.container-green hr{
+    border-color: rgba(255,255,255,0.2);
+}
+hr{
+    margin: 0;
+}
+.copyright{
+    padding: 15px 0;
+}
+.footer-info{
+    display: flex;
+    gap: 12px;
+}
+.fa-map-location-dot, .whatsapp-info, .fa-envelope{
+    padding: 6px;
+}
+.footer-info a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Tampilan Mobile ***********************************************************************/
+@media (max-width: 768px){
+    html{
+        font-size: 12px;
+    }
+    /* NAVBAR */
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+    .kontak-section{
+        display:flex;
+        flex-direction:column-reverse;
+        margin:16px 0;
+        border-radius:12px;
+        overflow:hidden;
+    }
+  
+    .pesan-kesan-section,
+    .informasi-section{
+        padding:24px;
+    }
+    .informasi-section{
+        margin-right:0;
+        border-radius:0;
+    }
+    .pesan-kesan,
+    .informasi{
+        padding:0;
+    }
+    .kontak-section h2{
+        font-size:1.6rem;
+        margin-bottom:20px;
+    }
+    .informasi-card h3{
+        font-size:1.2rem;
+    }
+    .informasi-card p{
+        padding-left:10px;
+        font-size:1rem;
+    }
+
+    .pesan-kesan input{
+        height:45px;
+    }
+    .pesan-kesan textarea{
+        min-height:140px;
+    }
+
+    .map{
+        padding:0 0 2rem;
+    }
+    iframe{
+        height:300px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        padding: 20px 16px;
+    }
+    .footer-brand img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    h4 {
+        margin: 24px 0 12px !important;
+    }
+    .sosmed .list-inline {
+        margin: 0 0 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
