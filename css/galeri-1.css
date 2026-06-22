@@ -57,7 +57,6 @@ h2{
     color: #222;
     text-decoration: none;
 }
-
 /* NAVBAR **************************************************************************************/
 .navbar{
     position: sticky; /* ini masih belum jalan */
@@ -126,69 +125,44 @@ h2{
     transition: .3s;
 }
 
-/* halaman berita *************************************************************************************************/
-.berita-box{
-    background: white;
-    padding: 12px 40px 40px;
-    margin: 50px auto;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-}
-.judul-berita{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 15px;
-    color: var(--hitam-utama);
-}
-
-.meta-berita{
+/* galeri *******************************************************************************************************************/
+.galeri-container{
     display: flex;
-    gap: 25px;
-    margin-bottom: 30px;
-    color: #777;
-    font-size: .95rem;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 8px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
-.meta-berita i{
-    margin-right: 6px;
-    color: var(--hijau-utama);
+.galeri-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+    width: auto;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: .4s;
+    text-align: center;
 }
-
-.gambar-berita{
-    margin-bottom: 30px;
+.galeri-card:hover{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
 }
-.gambar-berita img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
+#galeri-1{
+    background-image: url(../img/Gallery/Galeri4/galeri4.1.jpg);
 }
-.gambar-berita{
-    overflow:hidden;
-    border-radius:12px;
+#galeri-2{
+    background-image: url(../img/Gallery/Galeri2/galeri2.1.jpg);
 }
-.gambar-berita img{
-    transition:.5s;
+#galeri-3{
+    background-image: url(../img/Gallery/Galeri7/galeri7.4.jpg);
 }
-.gambar-berita:hover img{
-    transform:scale(1.1);
-}
-
-.isi-berita{
-    font-size: 1rem;
-    line-height: 1.9;
-    color: #444;
-    text-align: justify;
-}
-.isi-berita p{
-    margin-bottom: 24px;
-}
-
-.berita-button .fa-arrow-left{
-    transition: .3s;
-}
-.berita-button:hover .fa-arrow-left{
-    transform: translateX(-6px);
+#galeri-4{
+    background-image: url(../img/Gallery/Galeri8/galeri8.2.jpg);
 }
 
 /* footer **********************************************************************************************/
@@ -288,30 +262,24 @@ hr{
     html{
         font-size: 12px;
     }
+    
     /* NAVBAR */
-  .navbar-brand img {
+    .navbar-brand img {
         width: 40px;
         height: 40px;
     }
-    .judul-berita{
-        font-size: 18px;
+    
+    .galeri-card{
+        height: 100px;
     }
-    .meta-berita{
-        margin-bottom: 16px;
+    .galeri-card a{
+        padding-bottom: 12px;
     }
-    .berita-box{
-        padding: 4px 12px 12px;
-        border-radius: 8px;
+    .galeri-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
     }
-    .gambar-berita img{
-        height: 200px;
-    }
-    .gambar-berita{
-        border-radius: 4px;
-    }
-    .isi-berita p{
-        margin-bottom: 12px;
-    }
+
     /* FOOTER */
     .footer-content {
         padding: 20px 16px;

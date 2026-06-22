@@ -129,7 +129,7 @@ h2{
 .galeri-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
     padding: 12px 8px 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,12 +155,13 @@ h2{
     border-radius: 10px;
     transition: .4s;
 }
-.galeri-card p{
-    font-size: 1rem;
+.galeri-card a{
+    font-size: 1.1rem;
     position: absolute;
     padding-bottom: 24px;
     color: white;
     font-weight: bold;
+    text-decoration: none;
     z-index: 1;
     opacity: 0;
     margin: 0;
@@ -169,12 +170,13 @@ h2{
 .galeri-card:hover .overlay-galeri{
     opacity: 1;
 }
-.galeri-card:hover p{
+.galeri-card:hover a{
     opacity: 1;
 }
 .galeri-card:hover{
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-    transform: scale(1.1);
+    transform: scale(1.05);
+    z-index: 1;
 }
 #galeri-1{
     background-image: url(../img/Gallery/Galeri4/galeri4.1.jpg);
@@ -296,7 +298,7 @@ hr{
     .galeri-card{
         height: 150px;
     }
-    .galeri-card p{
+    .galeri-card a{
         padding-bottom: 12px;
     }
     .galeri-container{
