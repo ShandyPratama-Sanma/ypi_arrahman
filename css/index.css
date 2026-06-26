@@ -126,9 +126,6 @@ h2{
     transition: .3s;
 }
 
-
-
-
 /* hero *****************************************************************************/
 #hero{
     position: relative; /*agar konten absolute bisa nempel kesini*/
@@ -284,25 +281,25 @@ h2{
 }
 .image-poster{
     border-radius: 8px;
-    width: 260px;
+    width: 300px;
     height: auto;
 }
 .ppdb-info{
     padding: 16px;
 }
 .status-ppdb{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 .ppdb-info h2{
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 .ppdb-info p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 .ppdb-info ul{
@@ -312,10 +309,16 @@ h2{
 }
 .ppdb-info li{
     margin-bottom: 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .ppdb-button{
     margin-left: 0;
+}
+.ppdb-button .fa-arrow-right{
+    transition: .3s;
+}
+.ppdb-button:hover .fa-arrow-right{
+    transform: translateX(6px);
 }
 .ppdb-poster:active{
     transform: scale(1.5);
@@ -592,7 +595,7 @@ hr{
         gap: 16px;
     }
     .image-poster{
-        width: 180px;
+        width: 240px;
         height: auto;
     }
 
