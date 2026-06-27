@@ -176,19 +176,6 @@ h2{
     transform: scale(1.05);
     z-index: 1;
 }
-#galeri-1{
-    background-image: url(../img/Gallery/Galeri4/galeri4.1.jpg);
-}
-#galeri-2{
-    background-image: url(../img/Gallery/Galeri2/galeri2.1.jpg);
-}
-#galeri-3{
-    background-image: url(../img/Gallery/Galeri7/galeri7.4.jpg);
-}
-#galeri-4{
-    background-image: url(../img/Gallery/Galeri8/galeri8.2.jpg);
-}
-
 /* footer **********************************************************************************************/
 .footer-content{
     padding: 24px 32px;
