@@ -48,8 +48,6 @@ h2{
     color: white;
     transition: .3s;
     font-weight: bold;
-    width: auto;
-    height: auto;
     border: none;
 }
 .button1:hover{
@@ -125,8 +123,6 @@ h2{
     color: white !important;
     transition: .3s;
 }
-
-
 
 /* PPDB ******************************************************************************************************************8*/
 .ppdb-card{
