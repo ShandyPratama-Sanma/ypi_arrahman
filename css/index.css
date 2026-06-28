@@ -191,15 +191,6 @@
 .ppdb-button:hover .fa-arrow-right{
     transform: translateX(6px);
 }
-.ppdb-poster:active{
-    transform: scale(1.5);
-    border: 2px solid #04400ba2;
-    border-radius: 4px;
-    z-index: 2;
-}
-.image-poster:active{
-    border-radius: 2px;
-}
 
 /* berita *************************************************************************************/
 #container-berita{

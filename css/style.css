@@ -224,7 +224,7 @@ hr{
     padding: 0;
     position: relative;
 }
-#modalImage{
+#modalBackground, #modalImage{
     width:100%;
     border-radius:10px;
 }

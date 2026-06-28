@@ -97,8 +97,8 @@
         <div class="col-md-4 poster-card">
             <div class="ppdb-card text-center">
                 <h2>Poster PPDB</h2>
-                <img src="img/ppdb/ppdb1.jpeg" class="img-responsive poster-img" alt="Poster PPDB">
-                <img src="img/ppdb/ppdb2.jpeg" class="img-responsive poster-img" alt="Poster PPDB">
+                <img src="img/ppdb/ppdb1.jpeg" class="img-responsive poster-img modal-img" alt="Poster PPDB">
+                <img src="img/ppdb/ppdb2.jpeg" class="img-responsive poster-img modal-img" alt="Poster PPDB">
             </div>
         </div>
 
@@ -258,7 +258,30 @@
     </div>
 </footer>
 
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <button 
+                    type="button"
+                    class="close" 
+                    data-dismiss="modal">
+                    &times;
+                </button>
+
+                <img 
+                    id="modalImage"
+                    class="img-responsive"
+                    src="">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="bootstrap/js/jQuery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

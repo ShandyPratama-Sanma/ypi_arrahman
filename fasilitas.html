@@ -57,49 +57,63 @@
     <h1 class="judul">Fasilitas</h1>
     <div class="fasilitas-container">
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/ruang-kelas.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/ruang-kelas.jpeg"
+                style="background-image: url(img/fasilitas/ruang-kelas.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Ruang Kelas</h2>
                 <p>Ruang kelas yang nyaman dan kondusif menjadi pusat kegiatan belajar mengajar, dilengkapi dengan sarana penunjang yang mendukung terciptanya proses pembelajaran yang efektif dan menyenangkan.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/lab-kom.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/lab-kom.jpeg"
+                style="background-image: url(img/fasilitas/lab-kom.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Lab Komputer  </h2>
                 <p>Laboratorium komputer dilengkapi dengan perangkat komputer yang memadai untuk mendukung pembelajaran berbasis teknologi, pelaksanaan asesmen digital, serta meningkatkan keterampilan peserta didik di bidang teknologi informasi.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/lapangan.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/lapangan.jpeg"
+                style="background-image: url(img/fasilitas/lapangan.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Lapangan Sekolah</h2>
                 <p>Lapangan sekolah digunakan sebagai sarana kegiatan olahraga, upacara bendera, apel, serta berbagai kegiatan ekstrakurikuler dan pengembangan karakter siswa.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/musholla.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/musholla.jpeg"
+                style="background-image: url(img/fasilitas/musholla.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Musholla</h2>
                 <p>Musholla sekolah menyediakan tempat ibadah yang nyaman bagi siswa, guru, dan tenaga kependidikan untuk melaksanakan salat berjamaah, kegiatan keagamaan, serta pembinaan spiritual.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/ruang-guru.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/ruang-guru.jpeg"
+                style="background-image: url(img/fasilitas/ruang-guru.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Ruang Guru</h2>
                 <p>Ruang guru merupakan tempat bagi para pendidik untuk mempersiapkan pembelajaran, berdiskusi, berkoordinasi, dan melaksanakan berbagai kegiatan administrasi akademik.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/ruang-kepsek.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/ruang-kepsek.jpeg"
+                style="background-image: url(img/fasilitas/ruang-kepsek.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Ruang Kepala Sekolah</h2>
                 <p>Ruang kepala sekolah berfungsi sebagai pusat koordinasi, pengambilan keputusan, serta tempat menerima tamu dan melakukan pembinaan guna meningkatkan mutu pendidikan di sekolah.</p>
             </div>
         </div>
         <div class="fasilitas-card">
-            <div class="gambar-fasilitas" style="background-image: url(img/fasilitas/ruang-tu.jpeg);"></div>
+            <div class="gambar-fasilitas modal-bg" 
+                data-img="img/fasilitas/ruang-tu.jpeg"
+                style="background-image: url(img/fasilitas/ruang-tu.jpeg);"></div>
             <div class="fasilitas-content">
                 <h2>Ruang Tata Usaha (TU)</h2>
                 <p>Ruang tata usaha melayani administrasi sekolah, pengelolaan data akademik, kepegawaian, serta berbagai kebutuhan layanan informasi bagi siswa, orang tua, dan masyarakat.</p>
@@ -181,7 +195,31 @@
     </div>
 </footer>
 
+<div class="modal fade" id="backgroundModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal">
+                    &times;
+                </button>
+
+                <img
+                    id="modalBackground"
+                    src=""
+                    class="img-responsive"
+                    style="width:100%;">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="bootstrap/js/jQuery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>   
